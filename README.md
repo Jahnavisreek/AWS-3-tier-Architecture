@@ -131,7 +131,7 @@ The AWS networking components control how traffic reaches the application and ho
 
 ---
 
-## Future Improvements
+## 📈 Future Improvements
 
 * [ ] Infrastructure provisioning using Terraform
 * [ ] CI/CD automation using Jenkins or GitHub Actions
