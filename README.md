@@ -117,6 +117,7 @@ The AWS networking components control how traffic reaches the application and ho
 * **Load Balancer Health Criteria:** Learned how HTTP status codes directly dictate Target Group health assessments and traffic distribution behavior in AWS ALB.
 * **Object Storage Precision:** Developed best practices for S3 key structuring, bucket access verification, and bootstrapping automation.
 
+---
 
 ## 💼 Core Skills Demonstrated
 
