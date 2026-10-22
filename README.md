@@ -84,8 +84,10 @@ The AWS networking components control how traffic reaches the application and ho
 ## Screenshots
 <img width="1908" height="913" alt="VPC Resource Map" src="https://github.com/user-attachments/assets/b5cc5500-f7a8-42fd-8495-9ffbf044ac36" />
 <img width="1917" height="1012" alt="Screenshot 2026-10-16 195443" src="https://github.com/user-attachments/assets/5aa5067a-ac93-4d4d-bbf6-7e425f00abe5" />
+<img width="1581" height="930" alt="Screenshot 2026-10-22 150342" src="https://github.com/user-attachments/assets/6b69f4f9-b696-4ce5-8f26-a99daa7775bd" />
+<img width="1917" height="827" alt="Screenshot 2026-10-22 150420" src="https://github.com/user-attachments/assets/b47d1215-3df6-41a9-9147-3b80b05715d5" />
 
-
+---
 
 | Working Application | AWS Configuration |
 | :---: | :---: |
