@@ -92,9 +92,11 @@ The AWS networking components control how traffic reaches the application and ho
 
 | Working Application | AWS Configuration |
 | :---: | :---: |
-| <img width="1917" height="965" alt="final" src="https://github.com/user-attachments/assets/d565e6ea-f429-4743-92e2-11e50161b0fd" /> |
+| <img width="1917" height="965" alt="final" src="https://github.com/user-attachments/assets/d565e6ea-f429-4743-92e2-11e50161b0fd" /> | <img width="1917" height="965" alt="Target Group Health Check" src="PASTE_YOUR_NEW_SCREENSHOT_LINK_HERE" /> |
+| *Frontend Application Output* | *ALB Target Group Health Checks (Healthy)* |
 
 ---
+
 ## 🛠️ Challenges Faced & Troubleshooting
 
 ### 1. Nginx Web Server Configuration & Redirection Loops
