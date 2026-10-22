@@ -92,8 +92,33 @@ The AWS networking components control how traffic reaches the application and ho
 | <img width="1917" height="965" alt="final" src="https://github.com/user-attachments/assets/d565e6ea-f429-4743-92e2-11e50161b0fd" /> |
 
 ---
+## 🛠️ Challenges Faced & Troubleshooting
 
-## Key Learnings
+### 1. Nginx Web Server Configuration & Redirection Loops
+* **Challenge:** Encountered `HTTP 500 Internal Server Error` and browser redirection loops during web tier setup.
+* **Root Cause:** Configuration file naming and directory path mismatches in `/etc/nginx/conf.d/`, coupled with a missing default `index.html` file in the web root.
+* **Resolution:** Re-aligned Nginx configuration file paths, validated syntax using `sudo nginx -t`, created the required fallback `index.html`, and verified local responses using `curl -I localhost`.
+
+### 2. ALB Target Group Unhealthy Status
+* **Challenge:** The Application Load Balancer marked backend EC2 instances as `Unhealthy`, preventing traffic routing.
+* **Root Cause:** The Target Group health check was expecting an `HTTP 200 OK` response code on `/`, but the application was returning redirects (`301`/`302`) and server errors (`500`).
+* **Resolution:** Investigated Nginx access and error logs (`/var/log/nginx/`), adjusted the health check endpoint path, and updated the matcher codes in the AWS Target Group configuration to accept valid responses.
+
+### 3. AWS S3 Asset Download Failures
+* **Challenge:** EC2 bootstrap scripts failed to retrieve static assets and application bundles from Amazon S3.
+* **Root Cause:** Incorrect S3 object keys (case sensitivity and missing prefix path) in the retrieval script.
+* **Resolution:** Audited object keys using AWS CLI (`aws s3 ls`) and updated download scripts with explicit S3 URI paths.
+
+---
+
+## 💡 Key Learnings
+
+* **Diagnostic Tooling:** Strengthened hands-on debugging workflows using Linux CLI tools, Nginx access/error logs (`/var/log/nginx/error.log`), and `curl` flags (`-I`, `-v`) to isolate networking versus application issues.
+* **Load Balancer Health Criteria:** Learned how HTTP status codes directly dictate Target Group health assessments and traffic distribution behavior in AWS ALB.
+* **Object Storage Precision:** Developed best practices for S3 key structuring, bucket access verification, and bootstrapping automation.
+
+
+## 💼 Core Skills Demonstrated
 
 * AWS networking and subnet design
 * EC2 deployment and instance management
