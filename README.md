@@ -63,8 +63,9 @@ The AWS networking components control how traffic reaches the application and ho
 * **Amazon Route 53**
 * **AWS Certificate Manager (ACM)**
 
-### Database
-* **Amazon RDS for MySQL**
+### Storage & Database
+* **Amazon S3 (Simple Storage Service):** Static asset hosting and deployment bundle storage
+* **Amazon RDS for MySQL:** Relational database backend
 
 ---
 
