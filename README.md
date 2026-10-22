@@ -1,7 +1,7 @@
 # AWS-3-tier-Architecture
 Implementation of a three-tier web application architecture using AWS services
-![Uploading architecture-diagram.png.png…]()
 
+<img width="1792" height="2400" alt="architecture-diagram png" src="https://github.com/user-attachments/assets/5fbf51e5-b9b9-4714-bab8-8092efada3a6" />
 
 ## Repository Structure
 
